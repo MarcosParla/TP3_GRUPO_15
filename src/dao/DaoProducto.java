@@ -1,5 +1,6 @@
 package dao;
 
+<<<<<<< HEAD
 import entidad.Producto;
 
 import java.sql.CallableStatement;
@@ -19,3 +20,8 @@ public class DaoProducto {
     private String dbName = "bdInventario?useUnicode=yes&characterEncoding=UTF-8&useSSL=false";
 
 }
+=======
+public class DaoProducto {
+
+}
+>>>>>>> jaz/main

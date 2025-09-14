@@ -1,45 +1,47 @@
 package entidad;
 
+import java.math.BigDecimal;
+
 public class producto{
-	private int codigo;
-	private String Nombre;
-	private int Precio;
-	private int Stock;
+	private String codigo;
+	private String nombre;
+	private BigDecimal precio;
+	private int stock;
 	private int idCategoria;
 	
 	public producto() {
 		
 	}
-	public producto(int codigo, String nombre, int precio, int stock ,int idCategoria) {
+	public producto(String codigo, String nombre, BigDecimal precio, int stock ,int idCategoria) {
 		super();
 		this.codigo = codigo;
-		this.Nombre = nombre;
-		this.Precio = precio;
-		this.Stock = stock;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.stock = stock;
 		this.idCategoria=idCategoria;
 	}
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
-	public void setNombre(String nombre) {
+	public void setNombre(String Nombre) {
 		Nombre = nombre;
 	}
-	public int getPrecio() {
-		return Precio;
+	public BigDecimal getPrecio() {
+		return precio;
 	}
-	public void setPrecio(int precio) {
+	public void setPrecio(BigDecimal Precio) {
 		Precio = precio;
 	}
 	public int getStock() {
-		return Stock;
+		return stock;
 	}
-	public void setStock(int stock) {
+	public void setStock(int Stock) {
 		Stock = stock;
 	}
 	
@@ -51,8 +53,8 @@ public class producto{
 	}
 	@Override
 	public String toString() {
-		return "producto [codigo=" + codigo + ", Nombre=" + Nombre + ", Precio=" + Precio + ", Stock=" + Stock
-				+ ", idCategoria=" + idCategoria + "]";
+		return "Producto [Codigo = " + codigo + ", Nombre = " + nombre + ", Precio = " + precio + ", Stock = " + stock
+				+ ", idCategoria = " + idCategoria + "]";
 	}
 	
 	
